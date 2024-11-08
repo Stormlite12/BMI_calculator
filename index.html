@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <h1>Calculate your BMI</h1>
+
+            <div class="age">
+                <h2>Enter age</h2>
+                <input type="text" name="age" id="age">
+            </div>
+
+            <div class="gender">
+                <label class="container">
+                    <input type="radio" name="radio"id="m"><p class="text">Male</p>
+                    <span class="check"></span>
+                </label>
+                <label class="container"> 
+                    <input type="radio" name="radio" id="f"><p class="text">Female</p>
+                    <span class="check"></span>
+                </label>
+            </div>
+
+
+            <div class="measurements">
+                <label class="weight">
+                    <h3>Height(cm)</h3>
+                    <input type="text" class="measure" id="measureH">
+                </label>
+                <label class="height">
+                    <h3>Weight(kg)</h3>
+                    <input type="text" class="measure" id="measureW">
+                </label>
+            </div>
+
+        <div>
+            <button  id="submit" onclick="calculate()">Calculate BMI</button>
+            <div class="check-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                </svg>
+            </div>
+        </div>
+
+            <div class="result">
+                <p>Your BMI is</p>
+                <div id="result">00.00</div>
+                <p class="comment"></p>
+            </div>
+
+            <div class="footer"><a href="#sid">SiD</a></div>
+
+
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
